@@ -3,7 +3,8 @@ var optimist = require('optimist');
 function WebpackReloadPlugin(ip){
   var argv = optimist.string('reload').alias('reload','r').argv;
   
-  this.ip = argv.reload || ip;
+  this.ip = ip;
+  if(typeof argv.reload === 'string' && arv.reload.length > 0) this.ip = arg.reload;
 }
 
 WebpackReloadPlugin.prototype.apply  = function(compiler){

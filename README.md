@@ -23,4 +23,8 @@ Like this:
 
 ## Changelog
 
+#### 0.1.1 (31/10/2014)
+
+* Fixed bug: Couldn't use `--reload` commandline and use IP from webpack config.
+
 #### 0.1.0 (05/08/2014)
